@@ -113,6 +113,7 @@ Cache.prototype.__acquireFresh = function(args, pending) { var self = this
     try { input = self._createReadStream.apply(self, args) }
     catch (e) { return error(e) }
     input
+      .on('error', error)
       .pipe(output)
       .on('error', error)
       .on('finish', makeStore)

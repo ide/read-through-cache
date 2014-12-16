@@ -1,6 +1,6 @@
 {
   "name": "read-through-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a simple read-through on-disk cache.",
   "main": "index.js",
   "repository": {
